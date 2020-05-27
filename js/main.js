@@ -1,3 +1,24 @@
+// random quote
+
+const quotes = [
+  "Tietoverkko koostuu laitteista, jotka kommunikoivat toistensa kanssa. Internet puolestaan koostuu tietoverkoista, joissa sijaitsevat laitteet kykenevät kommunikoimaan toisten laitteiden kanssa, vaikka ne sijaitsevat toisessa verkossa, riippumatta siitä kuinka monen verkon kautta kommunikaatio kulkee. (Lähde: Jyväskylän yliopiston Tietoverkot-kurssi.)", 
+  "Internet (netti) on maailmanlaajuinen toisiinsa kytkettyjen tietoverkkojen järjestelmä, joka käyttää internet-protokollaa (TCP/IP) yhdistämään tietoteknisiä laitetta toisiinsa. (Lähde: Wikipedia)", 
+  "Lyhyesti Internetin voisi määritellä maailmanlaajuiseksi verkkojen verkoksi eli tietoverkoksi, joka muodostuu toisiinsa kytketyistä pienemmistä verkoista. (Lähde: Peda.net)"];
+console.log(quotes);
+
+let firstQuote;
+firstQuote = Math.floor(Math.random()*Math.floor(3));
+console.log(firstQuote);
+
+function randomQuote () {
+  print("Mooooi");
+  let x = Math.floor(Math.random()*Math.floor(3));
+  document.getElementById("rdm-qt").innerHTML = quotes[x];
+}
+
+
+// p5
+
 let x1 = 150
 let x2 = 100
 let x3 = 240

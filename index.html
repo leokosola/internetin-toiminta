@@ -22,23 +22,24 @@
   <div class="wrapper">
 
     <h1>Internetin toiminta</h1>
-    <p>Sisällys</p>
-    <ul>
-      <li>Mikä internet on?</li>
-      <li>Mitä tieto on?</li>
-      <li>Miten tieto liikkuu?</li>
-      <li>Missä tieto liikkuu?</li>
-    </ul>
+    <div style="border: 2px solid #000; padding: 0 1em;">
+      <h3>Sisällys</h3>
+      <ul>
+        <li>Mikä internet on?</li>
+        <li>Mitä tieto on?</li>
+        <li>Miten tieto liikkuu?</li>
+        <li>Missä tieto liikkuu?</li>
+      </ul>
+    </div>
 
     <h2>Internetin olemus</h2>
-    <p>Kappale jossa alustetaan aihe.</p>
-    <blockquote>"internetin määritelmä"</blockquote>
-    <button>seuraava</button>
+    <blockquote id="rdm-qt">Internet on abstrakti asia, jonka voi määritellä monella tavalla. Klikkaa nappia nähdäksesi joitakin kuvauksia internetistä.</blockquote>
+    <button id="qt-btn" onclick="randomQuote()">Mikä on internet?</button>
 
     <h3>Internetin historia ja tarkoitus</h3>
-    <figure>Kuva aikajanaan</figure>
-    <figure>Kuva aikajanaan</figure>
-    <figure>Kuva aikajanaan</figure>
+    <p>Aikajana tai graafi</p>
+    <img style="width: 1000px; transform: translateX(-180px);" src="http://users.jyu.fi/~arjuvi/opetus/itkp104/history/history.svg" alt="">
+    <p><a href="http://users.jyu.fi/~arjuvi/opetus/itkp104/history/history.svg">Kuvalähde: http://users.jyu.fi/~arjuvi/opetus/itkp104/history/history.svg</a></p>
 
     <h3>Arkkitehtuuri</h3>
     <table>
@@ -103,6 +104,8 @@
     <h3>IP</h3>
     <p>Palautetaan lukija taas maan pinnalle, että netti on kuitenkin koneiden välistä kommunikointia ja sitä varten on olemassa IP-osoitteita. Avataan miten IPv4 ja IPv6 toimivat. Nyt kun bitit on aiemmin kerrottu, tämän ei pitäisi olla niin ufoaihe. </p>
     <figure style="background-color: #00ffff;">Vois jatkaa liikkuvaa interaktiivista pakettigrafiikkaa niin, että kaavioon on lisätty ip-osoitteita. Voisko lukija toimia reitittimen roolissa? Olisko se hauskaa?</figure>
+    <img src="https://learningnetwork.cisco.com/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=0683i000001s0Rq&operationContext=CHATTER&contentId=05T3i00000AD3Z7&page=0" alt="">
+    <p><a href="https://learningnetwork.cisco.com/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=0683i000001s0Rq&operationContext=CHATTER&contentId=05T3i00000AD3Z7&page=0">Kuvalähde: Cisco</a></p>
     <br>
     <strong>Yhteenveto luvusta 3</strong>
     <hr>
@@ -111,8 +114,12 @@
     <p>Jatketaan ymmärryksen lisäämistä siitä, että tieto todella liikkuu maapallolla eikä taianomaisesti jossain "bittiavaruudessa".</p>
     <figure style="background-color: #abcdef;">Traceroute-animaatio, joka näyttää reitin paikasta a paikkaan b. Ei sotketa pakkaa vielä kartalla, vaan abstrakti kaavio.</figure>
     <img src="./img/tracert.PNG" alt="">
+
     <p>Käyttäjän ei tarvitse miettiä muuta kuin että on hankkinut wlanin tai mobiilidataliittymän. Mutta miten tieto kotikoneelta tai puhelimesta liikkuu paikkaan x? Millä menetelmillä?</p>  
     <figure style="background-color: #abcdef;">Lisätään traceroute animaatioon karttaa ja tietoa infrastruktuurista. Cellmapperista saa tietoa tukiasemista, Telegeographysta merikaapeleista. Katsotaan joku sopiva rajaus ja kuinka paljon tietoa saa/kannattaa ahtaa.</figure>
+    <img src="https://a.fsdn.com/con/app/proj/openvisualtrace/screenshots/traceroute2D.PNG" alt="">
+    <p><a href="https://a.fsdn.com/con/app/proj/openvisualtrace/screenshots/traceroute2D.PNG">Kuvalähde: https://a.fsdn.com/con/app/proj/openvisualtrace/screenshots/traceroute2D.PNG</a></p>
+    
     <p>Omassa tiedonselvittelyssä huomasin, että mitä enemmän ymmärtää sitä syvemmälle myös haluaa mennä. Siksi olisikin kiinnostavaa tuoda vielä loppuun fysiikkaosio, jossa näytetään ne luonnontieteelliset ilmiöt, joihin digitaalisen informaation tai informaation siirto maapallolla perustuu. Voi olla että tämän pitäisi olla oma luku, erillään maantieteestä.</p>
     <figure>Läpileikkauksin selitettynä esimerkiksi valokuitukaapeli, 5G-tiedonsiirto radioaalloilla ja perinteinen kuparijohto. Miten digitaaliseksi koodattua dataa pystyy siirtämään yhtään mitenkään? Millä eri tavoin sitä voi tehdä?</figure>
     <br>
